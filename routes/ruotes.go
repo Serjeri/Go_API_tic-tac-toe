@@ -8,7 +8,7 @@ import (
 func SetupRoutes() *mux.Router {
 	r := mux.NewRouter()
 
-	r.HandleFunc("/start", handlers.StartGame).Methods("POST")
+	r.HandleFunc("/start", handlers.StartNewGame).Methods("POST")
 	r.HandleFunc("/move", handlers.Move).Methods("POST")
 
 	return r
